@@ -1,4 +1,4 @@
-# Symfony4 The spacebar project
+# Symfony4 - The Spacebar Project
 
 Based on knpuniversity tutorials:
 1. Stellar Development with Symfony 4
