@@ -10,6 +10,7 @@ namespace App\Controller;
 
 
 use App\Service\MarkdownHelper;
+use App\Service\SlackClient;
 use Psr\Log\LoggerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -18,6 +19,13 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ArticleController extends AbstractController
 {
+
+    private $isDebug;
+
+    public function __construct(bool $isDebug)
+    {
+        $this->isDebug = $isDebug;
+    }
 
     /**
      * @Route("/", name="app_homepage")
@@ -30,8 +38,12 @@ class ArticleController extends AbstractController
     /**
      * @Route("/news/{slug}", name="article_show")
      */
-    public function show($slug, MarkdownHelper $markdownHelper)
+    public function show($slug, MarkdownHelper $markdownHelper, SlackClient $slack)
     {
+        if ($slug == "slack") {
+            $slack->sendMessage('Vyacheslav', 'I ate a normal rock once');
+        }
+
         $comments = [
             'I ate a normal rock once. It did NOT taste like bacon!',
             'Woohoo! I\'m going on an all-asteroid diet!',
@@ -47,8 +59,6 @@ Meatball adipisicing http://www.strangearts.ru ribeye bacon strip steak eu. Cons
 EOF;
 
         $articleContent = $markdownHelper->parse($articleContent);
-
-
 
         return $this->render('article/show.html.twig',
             [
