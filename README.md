@@ -5,6 +5,17 @@ php -S 127.0.0.1:8000 -t public
 <br/>or <br/>
 ./bin/console server:run
 
+## Doctrine
+To make a table: <br/>
+./bin/console make:entity
+Create migration:
+./bin/console make:migration
+Apply migration:
+./bin/console doctrine:migrations:migrate
+./bin/console doctrine:migrations:status
+Twig
+./bin/console make:twig-extension
+
 Based on knpuniversity tutorials:
 1. Stellar Development with Symfony 4
 https://knpuniversity.com/screencast/symfony
