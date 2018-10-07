@@ -7,13 +7,15 @@ php -S 127.0.0.1:8000 -t public
 
 ## Doctrine
 To make a table: <br/>
-./bin/console make:entity
-Create migration:
+./bin/console make:entity <br/>
+Create migration: <br/>
 ./bin/console make:migration
-Apply migration:
-./bin/console doctrine:migrations:migrate
+
+Apply migration: <br/>
+./bin/console doctrine:migrations:migrate <br/>
 ./bin/console doctrine:migrations:status
-Twig
+
+## Twig
 ./bin/console make:twig-extension
 
 Based on knpuniversity tutorials:
