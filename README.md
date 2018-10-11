@@ -6,9 +6,9 @@ php -S 127.0.0.1:8000 -t public
 ./bin/console server:run
 
 ## Doctrine
-To make a table: <br/>
+Create a table: <br/>
 ./bin/console make:entity <br/>
-Create migration: <br/>
+Create a migration: <br/>
 ./bin/console make:migration
 
 Apply migration: <br/>
