@@ -144,4 +144,9 @@ class Article
     {
         return 'images/'.$this->getImageFilename();
     }
+
+    public function incrementHeartCount():self
+    {
+        $this->heartCount = $this->getHeartCount() + 1;
+    }
 }

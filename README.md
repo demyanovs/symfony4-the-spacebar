@@ -18,6 +18,9 @@ Apply migration: <br/>
 ## Twig
 ./bin/console make:twig-extension
 
+## Fixtures
+./bin/console make:fixtures
+
 Based on knpuniversity tutorials:
 1. Stellar Development with Symfony 4
 https://knpuniversity.com/screencast/symfony
