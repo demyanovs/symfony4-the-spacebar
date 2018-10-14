@@ -21,9 +21,12 @@ Apply migration: <br/>
 ## Fixtures
 ./bin/console make:fixtures
 
-Based on knpuniversity tutorials:
+Based on symfonycasts tutorials:
 1. Stellar Development with Symfony 4
-https://knpuniversity.com/screencast/symfony
+https://symfonycasts.com/screencast/symfony
 
 2. Symfony 4 Fundamentals: Services, Config & Environments
-https://knpuniversity.com/screencast/symfony-fundamentals
+https://symfonycasts.com/screencast/symfony-fundamentals
+
+3. Doctrine & the Database
+https://symfonycasts.com/screencast/symfony-doctrine
