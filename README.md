@@ -19,7 +19,8 @@ Apply migration: <br/>
 ./bin/console make:twig-extension
 
 ## Fixtures
-./bin/console make:fixtures
+./bin/console make:fixtures<br/>
+./bin/console doctrine:fixtures:load
 
 Based on symfonycasts tutorials:
 1. Stellar Development with Symfony 4
