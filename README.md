@@ -22,6 +22,9 @@ Apply migration: <br/>
 ./bin/console make:fixtures<br/>
 ./bin/console doctrine:fixtures:load
 
+## Create controller
+./bin/console make:controller
+
 Based on symfonycasts tutorials:
 1. Stellar Development with Symfony 4
 https://symfonycasts.com/screencast/symfony
