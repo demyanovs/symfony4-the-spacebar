@@ -1,25 +1,28 @@
 # Symfony4 - The Spacebar Project
 
-To run the app: <br/>
+To run the app: <br />
 php -S 127.0.0.1:8000 -t public 
-<br/>or <br/>
+<br />or <br />
 ./bin/console server:run
 
 ## Doctrine
-Create a table: <br/>
-./bin/console make:entity <br/>
-Create a migration: <br/>
+Create a table: <br />
+./bin/console make:entity <br />
+Create a migration: <br />
 ./bin/console make:migration
 
-Apply migration: <br/>
-./bin/console doctrine:migrations:migrate <br/>
+Apply migration: <br />
+./bin/console doctrine:migrations:migrate <br />
 ./bin/console doctrine:migrations:status
+
+Database query <br />
+./bin/console doctrine:query:sql 'SELECT * from tag'
 
 ## Twig
 ./bin/console make:twig-extension
 
 ## Fixtures
-./bin/console make:fixtures<br/>
+./bin/console make:fixture<br />
 ./bin/console doctrine:fixtures:load
 
 ## Create controller
@@ -34,3 +37,6 @@ https://symfonycasts.com/screencast/symfony-fundamentals
 
 3. Doctrine & the Database
 https://symfonycasts.com/screencast/symfony-doctrine
+
+4. Mastering Doctrine Relations!
+https://symfonycasts.com/screencast/doctrine-relations
