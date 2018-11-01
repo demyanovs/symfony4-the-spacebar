@@ -28,6 +28,10 @@ Database query <br />
 ## Create controller
 ./bin/console make:controller
 
+## Security
+./bin/console make:user
+
+##
 Based on symfonycasts tutorials:
 1. Stellar Development with Symfony 4
 https://symfonycasts.com/screencast/symfony
