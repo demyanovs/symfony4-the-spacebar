@@ -32,7 +32,6 @@ Database query <br />
 ./bin/console make:controller
 
 ## Security
-./bin/console make:user <br />
 Make authenticator:<br />
 php bin/console make:auth
 
