@@ -5,6 +5,9 @@ php -S 127.0.0.1:8000 -t public
 <br />or <br />
 ./bin/console server:run
 
+# Cash
+./bin/console cache:clear
+
 ## Doctrine
 Create a table: <br />
 ./bin/console make:entity <br />
