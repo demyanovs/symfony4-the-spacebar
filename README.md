@@ -5,7 +5,13 @@ php -S 127.0.0.1:8000 -t public
 <br />or <br />
 ./bin/console server:run
 
-# Cash
+## Services
+./bin/console debug:autowiring
+
+## Routing
+./bin/console debug:router
+
+## Cache
 ./bin/console cache:clear
 
 ## Doctrine

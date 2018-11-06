@@ -12,6 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CommentAdminController extends AbstractController
 {
     /**
+     * IsGranted("ROLE_ADMIN") - add @ before
      * @Route("/admin/comment", name="comment_admin")
      * @param CommentRepository $repository
      * @param Request $request
