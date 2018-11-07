@@ -11,7 +11,7 @@ security:
                 property: email
 
     role_hierarchy:
-        ROLE_ADMIN: [ROLE_ADMIN_COMMENT, ROLE_ADMIN_ARTICLE]
+        ROLE_ADMIN: [ROLE_ADMIN_COMMENT, ROLE_ADMIN_ARTICLE, ROLE_ALLOWED_TO_SWITCH]
 
     firewalls:
         dev:
@@ -29,6 +29,9 @@ security:
             remember_me:
                 secret:   '%kernel.secret%'
                 lifetime: 2592000 # 30 days in seconds
+
+            # ?_switch_user=email / ?_switch_user=_exit
+            switch_user: true
 
             # activate different ways to authenticate
 
