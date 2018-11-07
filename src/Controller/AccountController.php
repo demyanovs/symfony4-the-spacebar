@@ -15,7 +15,7 @@ class AccountController extends BaseController
     /**
      * @Route("/account", name="app_account")
      */
-    public function index(LoggerInterface $logger)
+    public function index()
     {
         return $this->render('account/index.html.twig', [
 
