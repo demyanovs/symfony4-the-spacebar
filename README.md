@@ -62,3 +62,6 @@ https://symfonycasts.com/screencast/symfony-doctrine
 
 4. Mastering Doctrine Relations!
 https://symfonycasts.com/screencast/doctrine-relations
+
+5. Symfony Security: Beautiful Authentication, Powerful Authorization
+https://symfonycasts.com/screencast/symfony-security/firewalls-authenticator
