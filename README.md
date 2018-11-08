@@ -17,6 +17,7 @@ php -S 127.0.0.1:8000 -t public
 ## Doctrine
 Create a table: <br />
 ./bin/console make:entity <br />
+
 Create a migration: <br />
 ./bin/console make:migration
 
@@ -26,6 +27,9 @@ Apply migration: <br />
 
 Database query <br />
 ./bin/console doctrine:query:sql 'SELECT * from tag'
+
+Drop all tables in the database <br />
+./bin/console doctrine:schema:drop --full-database --force
 
 ## Twig
 ./bin/console make:twig-extension
