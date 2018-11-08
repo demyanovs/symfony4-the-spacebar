@@ -110,13 +110,6 @@ class User implements UserInterface
         return $this;
     }
 
-    public function setPassword(string $password): self
-    {
-        $this->password = $password;
-
-        return $this;
-    }
-
     /**
      * @see UserInterface
      */
@@ -154,6 +147,13 @@ class User implements UserInterface
         return $this;
     }
 
+    public function setPassword(string $password): self
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
     public function getTwitterUsername(): ?string
     {
         return $this->twitterUsername;
@@ -169,8 +169,10 @@ class User implements UserInterface
     public function getAvatarUrl(string $size = null): string
     {
         $url = 'https://robohash.org/'.$this->getEmail();
+
         if ($size)
             $url .= sprintf('?size=%dx%d', $size, $size);
+
         return $url;
     }
 
@@ -234,5 +236,10 @@ class User implements UserInterface
         }
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->getFirstName();
     }
 }

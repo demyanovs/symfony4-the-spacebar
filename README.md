@@ -45,6 +45,10 @@ Drop all tables in the database <br />
 Make authenticator:<br />
 php bin/console make:auth
 
+Make voter:<br />
+php bin/console make:voter
+
+
 ##
 Based on symfonycasts tutorials:
 1. Stellar Development with Symfony 4

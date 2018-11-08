@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: slava
- * Date: 04.04.18
- * Time: 21:44
- */
 
 namespace App\Service;
-
 
 use Michelf\MarkdownInterface;
 use Psr\Log\LoggerInterface;
@@ -16,13 +9,9 @@ use Symfony\Component\Security\Core\Security;
 
 class MarkdownHelper
 {
-
     private $cache;
-
     private $markdown;
-
     private $logger;
-
     private $isDebug;
 
     private $security;
@@ -36,14 +25,15 @@ class MarkdownHelper
         $this->security = $security;
     }
 
-    public function parse(string $source): string {
-
+    public function parse(string $source): string
+    {
         if (stripos($source, 'bacon') !== false) {
             $this->logger->info('They are talking about bacon again!', [
                 'user' => $this->security->getUser()
             ]);
         }
 
+        // skip caching entirely in debug
         if ($this->isDebug) {
             return $this->markdown->transform($source);
         }
@@ -56,5 +46,4 @@ class MarkdownHelper
 
         return $item->get();
     }
-
 }
