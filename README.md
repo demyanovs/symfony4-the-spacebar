@@ -49,6 +49,7 @@ Make voter:<br />
 php bin/console make:voter
 
 
+
 ##
 Based on symfonycasts tutorials:
 1. Stellar Development with Symfony 4
